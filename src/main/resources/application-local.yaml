@@ -1,0 +1,10 @@
+logging:
+  level:
+    web: DEBUG
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+    include-exception: true
