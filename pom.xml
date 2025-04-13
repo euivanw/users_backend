@@ -12,7 +12,7 @@
 
     <groupId>dev.ivanwilhelm</groupId>
     <artifactId>users-backend</artifactId>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
 
     <name>users-backend</name>
     <description>users-backend</description>
