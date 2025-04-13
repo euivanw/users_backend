@@ -14,6 +14,8 @@ to the project.
 
 ## [Unreleased]
 
+## [v1.0.0] - 2025-04-13
+
 ### Added
 
 - Ability to create, update, delete, read and list users.
