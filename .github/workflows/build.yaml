@@ -1,0 +1,26 @@
+name: "Build and Tests"
+
+on:
+  push:
+    branches-ignore:
+      - "main"
+
+jobs:
+  build:
+    name: "Build and Tests"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Git Checkout"
+        uses: actions/checkout@v4.2.2
+
+      - name: "Set up JDK 21"
+        if: success()
+        uses: actions/setup-java@v4.7.0
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: "Build and Test"
+        if: success()
+        run: mvn -U -B clean install --file pom.xml
